@@ -1,0 +1,36 @@
+# README
+
+Just a python script to parse craigslist apartment listing data.
+
+## Requirements
+* python 3+ - tested on 3.1
+* lxml
+
+## Usage
+
+
+ex: 
+(todo: - yes fix the folder structure)
+
+import clparser
+text = "<data>" # text from a craigslist post listing.
+info = clparser.ParseListingText(text)
+
+---
+info will be a dictionary
+{
+    "url": <link to cl page>, 
+    "price": <1280>, 
+    "cats": <Boolean>, 
+    "address": <address>, 
+    "dogs": <Boolean>, 
+    "posted_on": <Datetime> #utc
+}
+
+any keys that are not found will not be present.
+
+
+## TODO
+
+* still figuring github out. organizing to come later
+* figure out how to include tests without actual cl data.
