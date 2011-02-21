@@ -13,7 +13,11 @@ ex:
 (todo: - yes fix the folder structure)
 
 import clparser
+<<<<<<< HEAD
 text = "<data>" # text from a craigslist post listing.
+=======
+text = "<data>" #text as 
+>>>>>>> 8650eb26d5124d34e00ef2a0093253f4595b1d99
 info = clparser.ParseListingText(text)
 
 ---
